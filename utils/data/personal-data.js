@@ -7,11 +7,11 @@ export const personalData = {
   phone: '5192407381',
   address: 'Cambridge, Ontario',
   github: 'https://github.com/Mkohler4',
-  facebook: 'https://www.facebook.com/abusaid.riyaz/',
+  facebook: '',
   linkedIn: 'https://www.linkedin.com/in/markus-kohler9/',
-  twitter: 'https://twitter.com/said7388',
-  stackOverflow: 'https://stackoverflow.com/users/16840768/abu-said',
-  leetcode: "https://leetcode.com/said3812/",
-  devUsername: "said7388",
-  resume: "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing"
+  twitter: '',
+  stackOverflow: '',
+  leetcode: "",
+  devUsername: "",
+  resume: ""
 }
