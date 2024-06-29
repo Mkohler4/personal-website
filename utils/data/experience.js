@@ -8,7 +8,7 @@ export const experiences = [
   {
     id: 2,
     title: "AI Strategy Developer",
-    company: "Fiverr (freelance)",
+    company: "PubNub",
     duration: "(May 2023 - September 2023)"
   },
   {
