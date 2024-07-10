@@ -1,4 +1,3 @@
-import crefin from '/public/image/crefin.jpg';
 import travel from '/public/image/travel.jpg';
 
 export const projectsData = [
@@ -10,7 +9,7 @@ export const projectsData = [
         role: 'FullStack Developer',
         code: '',
         demo: 'https://apps.apple.com/ca/app/pollar/id1520432580',
-        image: crefin,
+        image: '/projects/pollar.png',
     },
     {
         id: 2,
@@ -20,7 +19,7 @@ export const projectsData = [
         role: 'Front-end Developer',
         code: '',
         demo: 'https://pub.dev/packages/rime',
-        image: travel,
+        image: '/projects/perceive.png',
     }
 ];
 
