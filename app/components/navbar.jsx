@@ -1,15 +1,26 @@
-// @flow strict
-import Link from "next/link";
+"use client";
 
+// @flow strict
+import React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const hideMenuUrls = ["/ibte-soha-redirect"];
 
 function Navbar() {
-  return (
+  const pathname = usePathname();
+
+  // console.log("Path: ", pathname);
+
+  const hide = hideMenuUrls.includes(pathname);
+
+  return hide ? (
+    <></>
+  ) : (
     <nav className="bg-transparent">
       <div className="flex items-center justify-between py-5">
         <div className="flex flex-shrink-0 items-center">
-          <Link
-            href="/"
-            className=" text-[#16f2b3] text-3xl font-bold">
+          <Link href="/" className=" text-[#16f2b3] text-3xl font-bold">
             MARKUS KOHLER
           </Link>
         </div>
@@ -21,24 +32,34 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#experience"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">EXPERIENCE</div></Link>
+            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#experience">
+              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">EXPERIENCE</div>
+            </Link>
           </li>
           <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#skills"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">SKILLS</div></Link>
+            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#skills">
+              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">SKILLS</div>
+            </Link>
           </li>
           <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#education"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">EDUCATION</div></Link>
+            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#education">
+              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">EDUCATION</div>
+            </Link>
           </li>
           <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/blog"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">BLOGS</div></Link>
+            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/blog">
+              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">BLOGS</div>
+            </Link>
           </li>
           <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#projects"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">PROJECTS</div></Link>
+            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#projects">
+              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">PROJECTS</div>
+            </Link>
           </li>
         </ul>
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;
