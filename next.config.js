@@ -5,7 +5,7 @@ module.exports = {
     return [
       {
         source: "/ibte-soha-redirect",
-        destination: "https://png.pngtree.com/png-vector/20211022/ourmid/pngtree-coming-soon-banner-design-with-speaker-png-image_3999559.png",
+        destination: "https://photos.app.goo.gl/wBNtirYFrCqJRCJR7",
         permanent: true,
         basePath: false,
       },
